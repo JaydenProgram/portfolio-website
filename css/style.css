@@ -1,0 +1,126 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 15px;
+  }
+  #container {
+    min-width: 200px;
+    margin: 0, auto;
+    padding: 30px;
+    text-align: center;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header img {
+    border-radius: 50%;
+  }
+  #firstwords {
+    border: 5px solid rgba(43, 78, 112, 1);
+    margin: 10px;
+    font-size: 20px;
+  }
+  header {
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    font-family: cursive;
+  }
+  
+  .text-content {
+    font-size: 1.2em;
+    height: auto;
+  }
+  p {
+    margin: 0%;
+  }
+  .paragraphs{
+    padding: 10px;
+  }
+  h1 {
+    color: white;
+    background-color: rgba(0, 120, 208, 0.86);
+    text-align: center;
+  }
+  h2 {
+    color: white;
+    background-color: rgba(0, 94, 187, 1);
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: purple;
+  }
+  table, td, th {
+    border: 1px solid;
+    margin: 10px;
+    width: 98%;
+  }
+  
+  .menu-link {
+    color: black;
+    font-weight: bold;
+  }
+  
+  footer a {
+    color: darkblue;
+  }
+  nav {
+    text-align: center;
+  }
+  section {
+    background-color: rgba(116, 173, 231, 1);
+  }
+  #leftbox {
+    float: left;
+    width: 55%;
+    height: 1000px;
+  }
+  #rightbox {
+    float: right;
+    width: 40%;
+    height: 850px;
+    border-radius: 0%;
+    background-color: rgba(202, 228, 255, 1);
+    border: 5px solid rgba(43, 78, 112, 1);
+    padding: 20px;
+    border-radius: 25px;
+  }
+  .worklinks {
+    background-color: rgba(202, 228, 255, 1);
+    text-color: black;
+    text-decoration: none;
+    border-radius: 15%;
+    font-size: 20px;
+    float: left;
+  }
+  .worklinks:hover {
+    background-color: rgba(199, 208, 255, 1);
+    text-decoration: none;
+  }
+  .worklinks:visited {
+    text-color: black;
+  }
+  .workimg {
+  float: right;
+  
+    
+  }
+  #explainedmarks{
+    float: left;
+   
+  }
+  footer {
+    position: fixed;
+     bottom: 0;
+     width: 100%;
+  }
