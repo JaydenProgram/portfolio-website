@@ -1,126 +1,230 @@
 body {
-    background-color: lightblue;
-    margin: 0;
-    padding: 0;
-    font-family: serif;
-    font-size: 15px;
+  background-color: #EAEAEA;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 1.4em;
+
+}
+
+#container {
+  display: flex;
+  padding: 0px;
+  margin-top: 1px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAEAEA;
+}
+
+header {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(css-img/thumbnail-portfolio-2.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, .2), 0px -4px 2px -2px rgba(0, 0, 0, .2);
+}
+
+
+#logo {
+  border-radius: 50%;
+  padding: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.navbar a img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a img {
+  width: 35px;
+  height: auto;
+  padding: 10px;
+}
+
+nav a img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
+}
+
+nav a {
+  text-decoration: none;
+  color: #24292f;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading span {
+  color: #E4B13A;
+}
+
+.skills .heading span {
+  color: #4D8B31;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skills h2 {
+  margin: 20px 0 20px 0;
+  font-size: 2em;
+}
+
+.about-me {
+  background-color: rgba(102, 228, 147, 0.16);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 80vw;
+  margin: 100px auto;
+  padding: 50px 50px 50px 50px;
+  transition: transform 250ms;
+}
+
+.about-me:hover {
+  transform: translateY(-10px);
+}
+
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts a img {
+  height: auto;
+  width: 50px;
+  padding: 10px;
+}
+
+.contacts a img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+  background-image: linear-gradient(#E4B13A, #DE8E68);
+}
+
+.allskillsbox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.155);
+  border-radius: 5%;
+  width: 80vw;
+  height: 35vw;
+  justify-content: center;
+  transition: transform 250ms;
+}
+
+.allskillsbox:hover {
+  transform: translateY(10px);
+}
+
+.learned {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skillbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #de8d6871;
+  max-width: 22.8%;
+  min-width: 45px;
+  border: 2px solid #DE8E68;
+  border-radius: 10px;
+}
+
+.skillbox img {
+  max-width: 22.8%;
+  min-width: 45px;
+  margin-bottom: 5px;
+}
+
+
+footer a {
+  color: darkblue;
+}
+
+footer {
+  display: flex;
+  background-color: white;
+  position: relative;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  margin-right: 5px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  #container {
-    min-width: 200px;
-    margin: 0, auto;
-    padding: 30px;
-    text-align: center;
+
+  .contacts {
+    flex-direction: row;
   }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
   }
-  header img {
-    border-radius: 50%;
+
+  .skillboxes {
+    flex-direction: column;
+    margin-left: 45px;
   }
-  #firstwords {
-    border: 5px solid rgba(43, 78, 112, 1);
-    margin: 10px;
-    font-size: 20px;
+
+  .allskillsbox {
+    flex-direction: row;
+    height: 80%;
+    align-items: center;
   }
-  header {
-    text-align: center;
-  }
-  
-  h1,
-  h2 {
-    font-family: cursive;
-  }
-  
-  .text-content {
-    font-size: 1.2em;
-    height: auto;
-  }
-  p {
-    margin: 0%;
-  }
-  .paragraphs{
-    padding: 10px;
-  }
-  h1 {
-    color: white;
-    background-color: rgba(0, 120, 208, 0.86);
-    text-align: center;
-  }
-  h2 {
-    color: white;
-    background-color: rgba(0, 94, 187, 1);
-  }
-  
-  a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  a:visited {
-    color: purple;
-  }
-  table, td, th {
-    border: 1px solid;
-    margin: 10px;
-    width: 98%;
-  }
-  
-  .menu-link {
-    color: black;
-    font-weight: bold;
-  }
-  
-  footer a {
-    color: darkblue;
-  }
-  nav {
-    text-align: center;
-  }
-  section {
-    background-color: rgba(116, 173, 231, 1);
-  }
-  #leftbox {
-    float: left;
-    width: 55%;
-    height: 1000px;
-  }
-  #rightbox {
-    float: right;
-    width: 40%;
-    height: 850px;
-    border-radius: 0%;
-    background-color: rgba(202, 228, 255, 1);
-    border: 5px solid rgba(43, 78, 112, 1);
-    padding: 20px;
-    border-radius: 25px;
-  }
-  .worklinks {
-    background-color: rgba(202, 228, 255, 1);
-    text-color: black;
-    text-decoration: none;
-    border-radius: 15%;
-    font-size: 20px;
-    float: left;
-  }
-  .worklinks:hover {
-    background-color: rgba(199, 208, 255, 1);
-    text-decoration: none;
-  }
-  .worklinks:visited {
-    text-color: black;
-  }
-  .workimg {
-  float: right;
-  
-    
-  }
-  #explainedmarks{
-    float: left;
-   
-  }
-  footer {
-    position: fixed;
-     bottom: 0;
-     width: 100%;
-  }
+}
