@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: serif;
   font-size: 1.4em;
-
+  font-family: poppins, sans-serif;
 }
 
 #container {
@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #EAEAEA;
+  
 }
 
 header {
@@ -145,9 +146,9 @@ h2 {
   background-color: rgba(0, 0, 0, 0.155);
   border-radius: 5%;
   width: 80vw;
-  height: 35vw;
-  justify-content: center;
+  height: 50vw;
   transition: transform 250ms;
+  overflow: auto;
 }
 
 .allskillsbox:hover {
@@ -184,25 +185,16 @@ h2 {
   margin-bottom: 5px;
 }
 
-
-footer a {
-  color: darkblue;
-}
-
 footer {
   display: flex;
-  background-color: white;
+  background-color: #EAEAEA;
   position: relative;
   justify-content: center;
-  bottom: 0;
   width: 100%;
 }
 
-footer span {
-  margin-right: 5px;
-}
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 1023px) {
   .navbar {
     flex-direction: column;
     align-items: center;
