@@ -2,9 +2,8 @@ body {
   background-color: #EAEAEA;
   margin: 0;
   padding: 0;
-  font-family: serif;
   font-size: 1.4em;
-  font-family: poppins, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -19,7 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #EAEAEA;
-  
+  position: sticky;
+  top: 0px;
 }
 
 header {
@@ -42,6 +42,10 @@ header {
   height: auto;
 }
 
+.navbar a img {
+  transition: all 0.2s ease-out;
+}
+
 .navbar a img:hover {
   filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
 }
@@ -55,6 +59,7 @@ nav a img {
   width: 35px;
   height: auto;
   padding: 10px;
+  transition: all 0.2s ease-out;
 }
 
 nav a img:hover {
@@ -105,6 +110,7 @@ h2 {
   padding: 50px 50px 50px 50px;
   transition: transform 250ms;
 }
+
 
 .about-me:hover {
   transform: translateY(-10px);
@@ -170,6 +176,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   margin: 10px;
   background-color: #de8d6871;
