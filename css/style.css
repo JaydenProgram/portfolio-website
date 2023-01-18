@@ -127,6 +127,7 @@ h2 {
   flex-direction: column;
 }
 
+
 .contacts a img {
   height: auto;
   width: 50px;
@@ -191,6 +192,7 @@ h2 {
   min-width: 45px;
   margin-bottom: 5px;
 }
+
 
 footer {
   display: flex;
