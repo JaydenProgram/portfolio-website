@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
+
 body {
   background-color: #EAEAEA;
   margin: 0;
   padding: 0;
   font-size: 1.4em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
 }
 
 #container {
@@ -16,13 +18,45 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
-  position: sticky;
-  top: 0px;
+  height: 350px;
 }
 
 header {
+ width: 100vw;
+ top: 0;
+ position: sticky;
+ background-color: #EAEAEA;
+ z-index: 10;
+ 
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100px;
+  width: 80vw;
+  align-items: center;
+  
+  
+  
+}
+
+.info p {
+  display: flex;
+  margin: 0;
+
+}
+
+.info img {
+  height: 80px;
+}
+
+.hero {
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -42,35 +76,55 @@ header {
   height: auto;
 }
 
-.navbar a img {
-  transition: all 0.2s ease-out;
-}
-
-.navbar a img:hover {
-  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
-}
-
 nav {
   display: flex;
   align-items: center;
+  justify-content: center;
+  
 }
 
-nav a img {
+nav img {
   width: 35px;
   height: auto;
   padding: 10px;
   transition: all 0.2s ease-out;
 }
 
-nav a img:hover {
-  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
+#contactImg {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+  
 }
 
-nav a {
-  text-decoration: none;
-  color: #24292f;
-  padding: 20px;
-  text-align: center;
+
+
+#heroBox {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+#homeBox {
+  background-color: #4D8B31;
+}
+
+#aboutBox {
+background-color: #E4B13A;
+}
+
+#contactBox {
+background-color: #24292f;
+color: white;
+}
+
+.navBox {
+  padding: 60px;
+  border-radius: 19px 0px 19px 0px;
+  transition: 1s;
+}
+
+.navBox:hover {
+  transform: translateY(-10px);
 }
 
 .heading span {
@@ -203,10 +257,18 @@ footer {
 }
 
 
-@media (min-width: 480px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .navbar {
     flex-direction: column;
     align-items: center;
+  }
+
+  .navBox {
+    padding: 0px;
+  }
+
+  #heroBox {
+    width: 50vw;
   }
 
   .contacts {

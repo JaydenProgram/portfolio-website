@@ -7,21 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js"></script>
 </head>
 
 <body>
+  <header>
+    <div class="info">
+      <img src="img/logo portfolio.png"> <p>Jayden Blom</p>
+    </div>
+  </header>
+  
+    
   <div class="navbar">
-    <a href="#sectionlogo"><img id="logo" src="img/logo portfolio.png" alt="Logo"></a>
+    
     <nav>
-      <a href="index.html"><img
-          src="img/Home-Logo-Background-PNG-Image.png"></a>
-      <a href="about.html"><img
-          src="img/Globe_icon.png"></a>
-      <a href="contact.html"><img src="img/Address-Book-PNG-HD-Isolated.png"></a>
+      <div id="heroBox">
+        <a href="index.html"><div class="navBox" value="Ga naar de home pagina" id="homeBox"><img
+          src="img/Home-Logo-Background-PNG-Image.png"></div></a>
+          <div id="homeDiv"></div>
+          <a href="about.html"><div class="navBox" value="Ga naar over pagina" id="aboutBox"><img
+          src="img/Globe_icon.png"></div></a>
+          <div id="aboutDiv"></div>
+          <a href="contact.html"><div class="navBox" value="Ga naar contact pagina" id="contactBox">
+        <img  id="contactImg" src="img/Address-Book-PNG-HD-Isolated.png"></div></a>
+      </div>
+      <div id="contactDiv"></div>
     </nav>
   </div>
-  <header>
-  </header>
+  <div class="hero"></div>
   <main>
     <div id="container">
       <section class="about-me">

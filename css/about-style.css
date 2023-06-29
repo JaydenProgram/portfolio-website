@@ -1,18 +1,132 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Press+Start+2P&display=swap');
+
+
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 1.4em;
   background-color: #EAEAEA;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica;
   height: 100%;
 }
 
-header {
+.navbar {
   display: flex;
-  margin-bottom: 2px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
+  height: 350px;
+}
+
+header {
+ width: 100vw;
+ top: 0;
+ position: sticky;
+ background-color: #EAEAEA;
+ z-index: 10;
+ 
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100px;
+  width: 80vw;
+  align-items: center;
+  
+  
+  
+}
+
+.info p {
+  display: flex;
+  margin: 0;
+
+}
+
+.info img {
+  height: 80px;
+}
+
+.hero {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(css-img/thumbnail-portfolio-2.png);
+  background-size: cover;
+  background-position: center;
   box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, .2), 0px -4px 2px -2px rgba(0, 0, 0, .2);
+}
+
+
+
+#logo {
+  border-radius: 50%;
+  padding: 10px;
+  width: 100px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+nav img {
+  width: 35px;
+  height: auto;
+  padding: 10px;
+  transition: all 0.2s ease-out;
+}
+
+#contactImg {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+
+
+#heroBox {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+#homeBox {
+  background-color: #4D8B31;
+}
+
+#aboutBox {
+background-color: #E4B13A;
+}
+
+#contactBox {
+background-color: #24292f;
+color: white;
+}
+
+.navBox {
+  padding: 60px;
+  border-radius: 19px 0px 19px 0px;
+  transition: 1s;
+}
+
+.navBox:hover {
+  transform: translateY(-10px);
+}
+
+.heading span {
+  color: #E4B13A;
+}
+
+.skills .heading span {
+  color: #4D8B31;
 }
 
 #logo {
@@ -35,75 +149,12 @@ header {
   font-family: georgia, sans-serif;
 }
 
-#logo-name h1 {
-  color: rgb(100, 98, 98);
-}
 
-header a img {
-  transition: all 0.2s ease-out;
-}
-
-header a img:hover {
-  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav a img {
-  width: 35px;
-  height: auto;
-  padding: 10px;
-  transition: all 0.2s ease-out;
-}
-
-nav a img:hover {
-  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
-}
-
-nav a {
-  text-decoration: none;
-  color: #24292f;
-  padding: 20px;
-  text-align: center;
-}
 
 #container {
   display: flex;
   flex-direction: row;
 }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vw;
-  width: 40vw;
-  color: white;
-  position: sticky;
-  z-index: 1;
-  top: 0px;
-  background-image: linear-gradient(#212530, #323748);
-}
-
-aside h1 {
-  color: #EAEAEA;
-}
-
-aside a {
-  text-decoration: none;
-  position: sticky;
-  top: 50px;
-}
-
-aside a:hover #logo-big,
-aside a:hover h1 {
-  filter: opacity(0.4) drop-shadow(0 0 0 #00ff11);
-}
-
 
 
 .hero {
@@ -135,6 +186,9 @@ aside a:hover h1 {
   flex-direction: row;
   margin: 25px;
   flex-wrap: wrap;
+
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .project-box {
@@ -179,7 +233,7 @@ footer {
   width: 100%;
 }
 
-@media (min-width: 480px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -189,10 +243,7 @@ footer {
     flex-direction: column;
   }
 
-  aside {
-    height: 45vh;
-    width: 100vw;
-  }
+
 
   .hero {
     height: 30vh;
@@ -203,6 +254,14 @@ footer {
   .project-box img {
     width: 400px;
     height: 200px;
+  }
+
+  .navBox {
+    padding: 0px;
+  }
+
+  #heroBox {
+    width: 50vw;
   }
 
 }

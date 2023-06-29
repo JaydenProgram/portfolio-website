@@ -11,49 +11,55 @@
 </head>
 
 <body>
-    <header>
-            <a href="#sectionlogo"><img id="logo" src="img/logo portfolio.png" alt="Logo"></a>
-            <nav>
-                <a href="index.html"><img
-                    src="img/Home-Logo-Background-PNG-Image.png"></a>
-                <a href="about.html"><img
-                    src="img/Globe_icon.png"></a>
-                <a href="contact.html"><img src="img/Address-Book-PNG-HD-Isolated.png"></a>
-        </div>
-    </header>
-
+  <header>
+    <div class="info">
+      <img src="img/logo portfolio.png"> <p>Jayden Blom</p>
+    </div>
+  </header>
+  
+    
+  <div class="navbar">
+    
+    <nav>
+      <div id="heroBox">
+        <a href="index.html"><div class="navBox" value="Ga naar de home pagina" id="homeBox"><img
+          src="img/Home-Logo-Background-PNG-Image.png"></div></a>
+          <div id="homeDiv"></div>
+          <a href="about.html"><div class="navBox" value="Ga naar over pagina" id="aboutBox"><img
+          src="img/Globe_icon.png"></div></a>
+          <div id="aboutDiv"></div>
+          <a href="contact.html"><div class="navBox" value="Ga naar contact pagina" id="contactBox">
+        <img  id="contactImg" src="img/Address-Book-PNG-HD-Isolated.png"></div></a>
+      </div>
+      <div id="contactDiv"></div>
+    </nav>
+  </div>
+  
+    
     <div class="hero">
-        <form action="thanks.html">
-            <h1>Contacteer mij!</h1>
-            <div class="row">
-                <div class="input-group">
-                    <input type="name" id="name" required>
-                    <label for="name"><i class="fa-solid fa-user"></i>Jou naam</label>
-                </div>
-                <div class="input-group">
-                    <input type="number" id="number" required>
-                    <label for="number"><i class="fa-solid fa-phone"></i>Telefoonnummer</label>
-                </div>
-
+        
+        <section class="about-me">
+            <h1>Mijn social media</h1>
+            <div class="contacts">
+              <a href="https://www.instagram.com/jayden.blom/?next=%2F" target="_blank"><img
+                  src="https://parspng.com/wp-content/uploads/2021/09/pngwing.com-4.png" alt="insticon"></a>
+                  <span class="link-text">Jayden.Blom</span>
+              <a href="https://www.youtube.com/channel/UCXxh_2XY3nMFntcDC72PgYw" target="_blank"><img
+                  src="https://cdn-icons-png.flaticon.com/512/48/48968.png" alt="yticon"></a>
+                  <span class="link-text">Jayden</span>
+              <a href="https://www.tiktok.com/@nedjayz" target="_blank"><img
+                  src="https://cdn-icons-png.flaticon.com/512/1946/1946552.png" alt="tticon"></a>
+                  <span class="link-text">Nedjayz</span>
             </div>
-
-            <div class="input-group">
-                <input type="email" id="email" required>
-                <label for="email"><i class="fa-solid fa-envelope"></i>E-mail</label>
-            </div>
-            <div class="input-group">
-                <textarea id="message" rows="8" required></textarea>
-                <label for="message"><i class="fa-solid fa-message"></i>Je bericht</label>
-            </div>
-            <button type="submit">SUBMIT<i class="fa-solid fa-paper-plane"></i></button>
-
-
-        </form>
-        <div id="mailButton">
+            </section>
+            <section class="about-me">
+              <div id="mailButton">
         <h1>Of contacteer mij via email!</h1>
         <a href="mailto: jaydenblom2005@gmail.com">
         <p>jaydenblom2005@gmail.com</p>
-    </a>
+          </a>
+            </section>
+        
     </div>
     </div>
 
